@@ -1,5 +1,5 @@
 //* NO eliminar la importacion dde style.css
-import './style.css'
+import '.././css/style.css'
 
 let array1 = [1,2,3,4,5];
 
