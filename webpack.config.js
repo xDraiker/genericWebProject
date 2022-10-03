@@ -14,9 +14,7 @@ module.exports = {
                 test: /\.js/i,
                 exclude: /node_modules/,
                 use:["babel-loader"]
-            }
-        ],
-        rules: [
+            },
             {
                 test: /\.css$/i,
                 use: [
@@ -25,7 +23,14 @@ module.exports = {
                     "postcss-loader"
                  ],
             },
-        ]
+            {
+                test: /\.(jp?g|png|gif|svg|webp)$/i,
+                use: [{
+                        loader:"file-loader?name=assets/[name].[ext]"
+                    }
+                 ],
+            },
+        ],
     },
     plugins: [
         new HtmlWebpackPlugin({
