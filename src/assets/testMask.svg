@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+    <defs>
+        <linearGradient id="lGrad">
+            <stop offset="0%" stop-color="#32f721" />
+            <stop offset="100%" stop-color="#e9f721" />
+        </linearGradient>
+        <mask id="mask">
+            <rect width="100" height="100" fill="#fff" />
+            <rect x="15" y="15" width="70" height="70" fill="#000" />
+            <rect x="30" y="30" width="40" height="40" fill="#fff" />
+            <rect x="45" y="45" width="10" height="10" fill="#000" />
+        </mask>
+    </defs>
+    <rect width="100" height="100" fill="url(#lGrad)" mask="url(#mask)" />
+</svg>
